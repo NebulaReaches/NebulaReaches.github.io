@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Solarreach</title>
+    <title>Beställning av marknadsföringstjänster - Solarreach</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -82,12 +82,36 @@
             position: fixed;
             top: 10px;
             left: 10px;
-            width: 64px; /* Adjust size as needed */
-            height: 64px; /* Adjust size as needed */
+            width: 64px;
+            height: 64px;
             border-radius: 50%;
             overflow: hidden;
-            z-index: 1; /* Ensure favicon is above content */
-            cursor: pointer; /* Change cursor to pointer when hovering */
+            z-index: 1;
+            cursor: pointer;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 20px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
         }
     </style>
     <link rel="icon" type="image/png" href="favicon.png">
@@ -112,13 +136,46 @@
         <a href="contact_us.html">Kontakt</a>
     </nav>
     <section class="container">
-        <h2>Välkommen!</h2>
-        <p>Välkommen till Solarreach, där vi specialiserar oss på att skapa högkvalitativa webbplatser för våra kunder. Med vårt team av erfarna utvecklare och designers strävar vi efter att leverera skräddarsydda lösningar som är anpassade för att möta dina specifika behov.</p>
-        <p>Oavsett om du är ett litet företag som vill etablera din närvaro online eller en stor koncern i behov av en komplex webbapplikation, så har vi dig täckt. Vår strävan efter excellens säkerställer att ditt projekt är färdigt i tid och inom budget.</p>
-        <p>På Solarreach tror vi på att bygga långsiktiga relationer med våra kunder. Vi är inte bara här för att skapa en webbplats åt dig; vi är här för att hjälpa ditt företag att lyckas online.</p>
-        <p>Beställ webbutvecklingstjänster från oss <a href="order_web_engineering.html">här</a>!</p>
-        <p>Beställ vår marknadsföringstjänst <a href="order_marketing.html">här</a>!</p>
+        <h2>Beställning av Marknadsföringstjänster</h2>
+        <p><strong>!!!OBS!!! Formulären fungerar <u>inte</u>!</strong></p>
+        <p>Fyll i formuläret nedan för att göra en beställning av våra webbutvecklingstjänster.</p>
+        <form>
+            <label for="name">Namn:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-post:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Telefonnummer:</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="message">Meddelande:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Skicka beställning">
+        </form>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <h3>Betala med PayPal</h3>
+        </div>
+        <!-- PayPal Buy Now Button -->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="text-align: center;">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="L9B8LS5JVZQG8">
+            <input type="hidden" name="currency_code" value="SEK">
+            <input type="image" src="https://www.paypalobjects.com/sv_SE/SE/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - Den säkraste och enklaste betalningsmetoden på nätet!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/sv_SE/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+
+        <!-- Swish Payment -->
+        <div style="text-align: center; margin-top: 20px;">
+            <h3>Eller betala med Swish</h3>
+            <p>Skicka betalningen till vårt Swish-nummer:</p>
+            <p><strong>+46 70 012 82 02</strong></p>
+            <p>Kom ihåg att ange din beställning i meddelandet.</p>
+        </div>
     </section>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
     <footer>
         <p>&copy; 2024 Solarreach. Alla rättigheter förbehållna.</p>
     </footer>
